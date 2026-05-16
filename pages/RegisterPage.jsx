@@ -247,6 +247,7 @@ function RegisterPage() {
               className="text-orange-500 font-bold hover:underline hover:text-orange-600 transition-colors"
             >
               Log In
+              
             </Link>
           </p>
         </div>
