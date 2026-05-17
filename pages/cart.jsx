@@ -7,6 +7,7 @@ import {
 } from "lucide-react";
 
 import { Link } from "react-router-dom";
+import Navbar from "../src/components/Navbar";
 
 function CartPage() {
   // --- Dummy Data (Replace with real state management in a live app) ---
@@ -42,6 +43,7 @@ function CartPage() {
   if (cartItems.length === 0) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white flex items-center justify-center px-4 md:px-10 py-28">
+        <Navbar></Navbar>
         <div className="text-center bg-white p-10 md:p-16 rounded-3xl shadow-xl border border-gray-100 animate-fade-in">
           <ShoppingBag className="w-24 h-24 mx-auto text-orange-400 mb-6" />
           <h1 className="text-4xl font-bold text-gray-900 mb-3">Your Cart is Empty!</h1>
